@@ -3,8 +3,6 @@ session_start();
 if(!isset($_SESSION['user_name'])){
 	header('Location: login.php');
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +12,6 @@ if(!isset($_SESSION['user_name'])){
 	<title>Document</title>
 </head>
 <body>
-<h1>Главная страница</h1>
+	<h1>Привет, <a href="profile.php"><?php echo $_SESSION['user_name']; ?></a></h1>
 </body>
 </html>

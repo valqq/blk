@@ -3,8 +3,6 @@ session_start();
 if(!isset($_SESSION['user_name'])){
 	header('Location: login.php');
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +12,8 @@ if(!isset($_SESSION['user_name'])){
 	<title>Document</title>
 </head>
 <body>
-<h1>Главная страница</h1>
+<h1>Данные</h1>
+<input type="text" name="name" placeholder="Имя"><br>
+<input type="text" name="name" placeholder="Фамилия"><br>
 </body>
 </html>
