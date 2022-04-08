@@ -18,6 +18,8 @@
    public function addDiscipline($d){
   array_push($this->disciplines, $d);
   }
+
+
   public function display(){
 
   	echo '<h1>Группа '.$this->title.'</h1>';
@@ -32,7 +34,6 @@
   		$discipline->display();
   	}
   }
- 
 
  }
  ?>
